@@ -49,7 +49,7 @@ public class CreateStream {
         // 迭代
         Stream<Integer> stream4 = Stream.iterate(0,(x) -> x+2).limit(10);
         stream4.forEach(System.out::println);
-        
+
         // 生成
         Stream<Double> stream5 = Stream.generate(Math::random).limit(2);
         stream5.forEach(System.out::println);
